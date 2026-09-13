@@ -50,6 +50,17 @@ p { margin: 0 0 var(--space-2); color: var(--dark); }
   h2 { margin-bottom: var(--space-1); }
   h3 { margin-bottom: var(--space-1); }
   p { margin-bottom: var(--space-1); }
+  
+  /* Improve spacing for small screens */
+  .card-rahat {
+    margin-bottom: 1rem;
+  }
+  
+  /* Better button sizing for mobile */
+  .btn-rahat {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
 }
 
 .text-muted-custom { color: var(--muted); }
@@ -85,17 +96,17 @@ input, select, textarea {
 }
 
 .section {
-  padding-block: var(--space-4);
+  padding-block: var(--space-3);
 }
 @media (min-width: 768px) {
-  .section { padding-block: var(--space-5); }
+  .section { padding-block: var(--space-4); }
 }
 @media (min-width: 992px) {
-  .section { padding-block: var(--space-6); }
+  .section { padding-block: var(--space-5); }
 }
-.section--tight { padding-block: var(--space-4); }
+.section--tight { padding-block: var(--space-3); }
 @media (min-width: 768px) {
-  .section--tight { padding-block: var(--space-5); }
+  .section--tight { padding-block: var(--space-4); }
 }
 .section--alt { background: var(--white); }
 .section--dark {
