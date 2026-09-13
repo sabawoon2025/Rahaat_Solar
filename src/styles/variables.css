@@ -1,0 +1,69 @@
+/*
+  DESIGN TOKENS — Rahat Solar
+  A solar-panel grid is the recurring visual motif (see .panel-grid,
+  .panel-seam) instead of generic gradients or soft SaaS shadows.
+*/
+:root {
+  /* Color */
+  --color-green-900: #0e3626;
+  --color-green-700: #1a5c3f;
+  --color-green-600: #21744f;
+  --color-green-500: #2f8f60;
+  --color-gold-600: #c8901c;
+  --color-gold-500: #e0a52e;
+  --color-gold-300: #f0c868;
+  --color-dark: #171f1a;
+  --color-light: #f5f6f1;
+  --color-white: #ffffff;
+  --color-muted: #64705f;
+  --color-border: #dde3d6;
+
+  /* Semantic */
+  --primary-green: var(--color-green-700);
+  --secondary-gold: var(--color-gold-500);
+  --dark: var(--color-dark);
+  --light: var(--color-light);
+  --muted: var(--color-muted);
+  --border: var(--color-border);
+  --white: var(--color-white);
+
+  /* Typography */
+  --font-latin: "Noto Sans", "Segoe UI", system-ui, sans-serif;
+  --font-arabic: "Amiri", "Noto Sans Arabic", "Noto Naskh Arabic", "Segoe UI", system-ui, sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  --fs-h1: clamp(2rem, 1.5rem + 2vw, 3.25rem);
+  --fs-h2: clamp(1.5rem, 1.25rem + 1vw, 2.25rem);
+  --fs-h3: clamp(1.15rem, 1.05rem + 0.4vw, 1.5rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  /* Spacing */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+
+  /* Shape */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --container-max: 1240px;
+
+  /* Motion */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

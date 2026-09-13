@@ -1,0 +1,6 @@
+# Domain is the intended domain (rahatsolar.com) per the project brief.
+# Update both this line and sitemap.xml if the final domain differs.
+User-agent: *
+Allow: /
+
+Sitemap: https://rahatsolar.com/sitemap.xml
